@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin-block: 1rem;
+}
+
+p,
+h1,
+h2,
+h3 {
+    padding-inline: 1rem;
+    line-height: 1.6;
+}
+
+
+header {
+    margin-top: 90px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+    grid-area: header;
+    background-color: #2c2c2c;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 60svh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInRight 0.5s ease-in-out forwards;
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+nav {
+    grid-area: nav;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust background color and opacity */
+    transition: top 0.3s ease; /* Smooth transition */
+
+    & a {
+        background-color: #fcb900;
+        display: block;
+        color: white;
+        font-size: 1.5rem;
+        text-decoration: none;
+        padding: 10px;
+        text-align: center;
+    }
+
+    & li {
+        list-style: none;
+    }
+
+    & a:hover {
+        background-color: black;
+        color: white;
+    }
+
+    & ul {
+        display: flex;
+    }
+
+    & li {
+        flex: 1;
+    }
+
+    .hamburger,
+    #hamburgerCheck {
+        display: none;
+    }
+
+    @media screen and (width < 900px) {
+        #hamburgerCheck {
+            display: none;
+        }
+
+        .hamburger {
+            display: block;
+            font-size: 2rem;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fcb900;
+        }
+
+        & ul {
+            flex-direction: column;
+            position: fixed;
+            top: 82.7px;
+            left: -100%;
+            width: 100%;
+            transition: left 500ms ease-in-out;
+        }
+
+        #hamburgerCheck:checked~ul {
+            left: 0;
+        }
+    }
+}

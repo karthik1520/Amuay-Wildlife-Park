@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(../images/about.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.about {
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: rgba(255, 255, 255, 0.7); /* White background with transparency */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Add padding for better spacing */
+    margin-top: 70px; /* Adjust margin top */
+    transform: translateX(-50px);
+    animation: slideInRight 0.5s ease-in-out forwards;
+
+    &  h2 {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px; /* Add space below the h2 element */
+        font-size: 24px; /* Adjust font size */
+        color: black;
+    }
+
+    & p {
+        margin: 0 1%; /* Add margin between paragraphs */
+        font-size: 16px; /* Adjust font size */
+        margin-bottom: 15px;
+    }
+}
