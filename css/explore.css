@@ -105,3 +105,13 @@ body {
         transform: translateX(0);
     }
 }
+
+@media screen and (max-width: 900px) {
+    .explore,
+    .buttons,
+    .pricing-individual,
+    .pricing-family {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}

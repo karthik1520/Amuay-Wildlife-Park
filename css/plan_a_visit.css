@@ -90,30 +90,42 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center-align content horizontally */
+
+    & h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: purple;
+    }
+    
+    & ul {
+        list-style: none;
+        padding: 0;
+        text-align: left; /* Left-align content */
+        width: 300px; /* Set a fixed width for better alignment */
+    }
+
+    & li {
+        margin-bottom: 10px;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between; /* Distribute content evenly */
+    }
+
+    & li strong {
+        width: 180px; /* Adjust width as needed */
+        text-align: left; /* Left-align text */
+    }
 }
 
-.timings-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: purple;
-}
+@media screen and (max-width: 900px) {
+    .visit-intro,
+    .timings-section {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 
-.timings-section ul {
-    list-style: none;
-    padding: 0;
-    text-align: left; /* Left-align content */
-    width: 300px; /* Set a fixed width for better alignment */
-}
-
-.timings-section li {
-    margin-bottom: 10px;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-between; /* Distribute content evenly */
-}
-
-.timings-section li strong {
-    width: 180px; /* Adjust width as needed */
-    text-align: left; /* Left-align text */
+    .timings-section ul {
+        width: 100%; /* Adjust width to fill the container */
+    }
 }

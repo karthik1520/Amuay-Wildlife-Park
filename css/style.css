@@ -34,6 +34,12 @@ header {
     animation: slideInRight 0.5s ease-in-out forwards;
     border-radius: 20px; /* Rounded corners */
     padding: 20px; /* Add padding for better spacing */
+
+    
+    @media screen and (max-width: 900px) {
+        margin-left: 50px;
+        margin-right: 50px;
+}
 }
 
 nav {
@@ -119,6 +125,13 @@ nav {
     opacity: 0;
     transform: translateX(-50px);
     animation: slideInRight 0.5s ease-in-out forwards;
+
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
 
 .footer-section {
@@ -152,6 +165,11 @@ nav {
 
     & ul li a:hover {
         text-decoration: underline; /* Add underline on hover */
+    }
+
+    @media screen and (max-width: 900px) {
+        margin-left: 50px;
+        margin-right: 50px;
     }
     
 }

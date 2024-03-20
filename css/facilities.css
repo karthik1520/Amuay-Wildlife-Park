@@ -82,3 +82,11 @@ body {
         margin-left: 30px;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .facilities,
+    .contents {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
