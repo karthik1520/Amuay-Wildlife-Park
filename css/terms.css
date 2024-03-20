@@ -1,14 +1,14 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url(../images/about.jpg);
+    background-image: url(../images/t&c.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
-.about {
+.membership-details {
     text-align: center;
     margin-left: 150px;
     margin-right: 150px;
@@ -18,7 +18,7 @@ body {
     /* Rounded corners */
     padding: 20px;
     /* Add padding for better spacing */
-    margin-top: 70px;
+    margin-top: 90px;
     /* Adjust margin top */
     transform: translateX(-50px);
     animation: slideInRight 0.5s ease-in-out forwards;
@@ -33,14 +33,33 @@ body {
         color: black;
     }
 
-    & p {
-        margin: 0 1%;
-        /* Add margin between paragraphs */
-        font-size: 16px;
-        /* Adjust font size */
-        margin-bottom: 15px;
+    & ul {
+        text-align: left;
+        padding-left: 0;
     }
 
+    & li {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    & .additional-details {
+        margin-top: 30px;
+    }
+
+    & .additional-details h3 {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    & .additional-details ul {
+        margin-top: 10px;
+    }
+
+    & .additional-details li {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
 
     @media screen and (max-width: 900px) {
         margin-left: 50px;

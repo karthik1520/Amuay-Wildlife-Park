@@ -23,7 +23,7 @@ header {
     margin-right: 150px;
     color: white;
     grid-area: header;
-    background-color: rgba(44, 44, 44, 0.7);;
+    background-color: rgba(44, 44, 44, 0.8);;
     background-attachment: fixed;
     background-size: cover;
     height: 60svh;
@@ -118,7 +118,7 @@ nav {
     margin-right: 150px;
     display: flex;
     justify-content: space-around;
-    background-color: rgba(44, 44, 44, 0.7); /* Set background color */
+    background-color: rgba(44, 44, 44, 0.8); /* Set background color */
     margin-top: 10px;
     border-radius: 20px; /* Rounded corners */
     padding: 20px; /* Add padding for better spacing */

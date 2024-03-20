@@ -12,7 +12,7 @@ body {
     text-align: center;
     margin-left: 150px;
     margin-right: 150px;
-    background-color: rgba(255, 255, 255, 0.7); /* White background with transparency */
+    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
     border-radius: 20px; /* Rounded corners */
     padding: 20px; /* Add padding for better spacing */
     margin-top: 70px; /* Adjust margin top */
@@ -62,7 +62,7 @@ body {
 .pricing-individual, .pricing-family {
     margin-left: 150px;
     margin-right: 150px;
-    background-color: rgba(255, 255, 255, 0.7); /* White background with transparency */
+    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
     border-radius: 20px; /* Rounded corners */
     padding: 20px; /* Add padding for better spacing */
     margin-top: 10px; /* Adjust margin top */

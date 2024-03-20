@@ -36,7 +36,7 @@ header {
     opacity: 0;
     transform: translateX(-50px);
     animation: slideInRight 0.5s ease-in-out forwards;
-    
+
     @media screen and (max-width: 900px) {
             margin-left: 50px;
             margin-right: 50px;
@@ -132,7 +132,7 @@ body {
     margin-left: 50px;
     margin-right: 50px;
     display: inline-block;
-    background-color: rgba(252, 185, 0, 0.7);
+    background-color: rgba(252, 185, 0, 0.8);
     color: white;
     text-decoration: none;
     font-size: 16px;
@@ -145,7 +145,7 @@ body {
 }
 
 .visit-button:hover {
-    background-color: rgba(255, 165, 0, 0.7);
+    background-color: rgba(255, 165, 0, 0.8);
     /* Change color on hover */
 }
 
@@ -154,7 +154,7 @@ body {
     margin-top: 10px;
     margin-left: 150px;
     margin-right: 150px;
-    background-color: rgba(252, 185, 0, 0.7);
+    background-color: rgba(252, 185, 0, 0.8);
     text-align: center; /* Center-align the content */
     border-radius: 20px; /* Rounded corners */
     padding: 20px; /* Add padding for better spacing */
@@ -183,7 +183,7 @@ body {
     text-align: center;
     margin-left: 150px;
     margin-right: 150px;
-    background-color: rgba(255, 255, 255, 0.7); /* White background with transparency */
+    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
     border-radius: 20px; /* Rounded corners */
     padding: 20px; /* Add padding for better spacing */
     margin-top: 10px; /* Adjust margin top */
@@ -214,7 +214,7 @@ body {
     margin-right: 150px;
     display: flex;
     justify-content: space-around;
-    background-color: rgba(44, 44, 44, 0.7); /* Set background color */
+    background-color: rgba(44, 44, 44, 0.8); /* Set background color */
     border-radius: 20px; /* Rounded corners */
     padding: 20px; /* Add padding for better spacing */
     margin-top: 10px; /* Adjust margin top */
