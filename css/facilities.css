@@ -12,24 +12,24 @@ body {
     text-align: center;
     margin-left: 150px;
     margin-right: 150px;
-    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
-    border-radius: 20px; /* Rounded corners */
-    padding: 20px; /* Add padding for better spacing */
-    margin-top: 70px; /* Adjust margin top */
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 20px; 
+    padding: 20px; 
+    margin-top: 70px;
     transform: translateX(-50px);
     animation: slideInRight 0.5s ease-in-out forwards;
 
     &  h2 {
         text-align: center;
         margin-top: 20px;
-        margin-bottom: 20px; /* Add space below the h2 element */
-        font-size: 24px; /* Adjust font size */
+        margin-bottom: 20px; 
+        font-size: 24px;
         color: black;
     }
 
     & p {
-        margin: 0 1%; /* Add margin between paragraphs */
-        font-size: 16px; /* Adjust font size */
+        margin: 0 1%; 
+        font-size: 16px; 
     }
 }
 
@@ -38,10 +38,10 @@ body {
     text-align: center;
     margin-left: 150px;
     margin-right: 150px;
-    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
-    border-radius: 20px; /* Rounded corners */
-    padding: 20px; /* Add padding for better spacing */
-    margin-top: 10px; /* Adjust margin top */
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 20px; 
+    padding: 20px; 
+    margin-top: 10px;
     transform: translateX(-50px);
     animation: slideInRight 0.5s ease-in-out forwards;
     overflow: auto;
@@ -49,14 +49,14 @@ body {
     &  h3 {
         text-align: center;
         margin-top: 20px;
-        margin-bottom: 20px; /* Add space below the h2 element */
-        font-size: 24px; /* Adjust font size */
+        margin-bottom: 20px; 
+        font-size: 24px; 
         color: black;
     }
 
     & p {
-        margin: 0 1%; /* Add margin between paragraphs */
-        font-size: 16px; /* Adjust font size */
+        margin: 0 1%; 
+        font-size: 16px;
     }
 
     & img[alt="Wild Dining"] {

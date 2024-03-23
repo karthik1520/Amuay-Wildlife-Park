@@ -14,8 +14,8 @@ body {
     margin-left: 150px;
     margin-right: 150px;
     background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 20px; /* Rounded corners */
-    padding: 20px; /* Add padding for better spacing */
+    border-radius: 20px; 
+    padding: 20px; 
     opacity: 0;
     transform: translateX(-50px);
     animation: slideInRight 0.5s ease-in-out forwards;
@@ -59,10 +59,8 @@ body {
 
 .visit-button:hover {
     background-color: #ffa500;
-    /* Change color on hover */
 }
 
-/* Define keyframes for the animation */
 @keyframes slideInRight {
     from {
         opacity: 0;
@@ -77,8 +75,8 @@ body {
 
 .timings-section {
     
-    border-radius: 20px; /* Rounded corners */
-    padding: 20px; /* Add padding for better spacing */
+    border-radius: 20px; 
+    padding: 20px; 
     margin-left: 150px;
     margin-right: 150px;
     opacity: 0;
@@ -89,7 +87,7 @@ body {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center-align content horizontally */
+    align-items: center; 
 
     & h2 {
         text-align: center;
@@ -101,20 +99,20 @@ body {
     & ul {
         list-style: none;
         padding: 0;
-        text-align: left; /* Left-align content */
-        width: 300px; /* Set a fixed width for better alignment */
+        text-align: left; 
+        width: 300px; 
     }
 
     & li {
         margin-bottom: 10px;
         font-size: 20px;
         display: flex;
-        justify-content: space-between; /* Distribute content evenly */
+        justify-content: space-between; 
     }
 
     & li strong {
-        width: 180px; /* Adjust width as needed */
-        text-align: left; /* Left-align text */
+        width: 180px; 
+        text-align: left; 
     }
 }
 
@@ -126,6 +124,6 @@ body {
     }
 
     .timings-section ul {
-        width: 100%; /* Adjust width to fill the container */
+        width: 100%; 
     }
 }

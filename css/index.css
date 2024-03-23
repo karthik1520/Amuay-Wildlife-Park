@@ -30,9 +30,9 @@ header {
     height: 60svh;
     display: grid;
     place-content: center;
-    text-align: center; /* Center-align the content */
-    border-radius: 20px; /* Rounded corners */
-    padding: 20px; /* Add padding for better spacing */
+    text-align: center; 
+    border-radius: 20px; 
+    padding: 20px; 
     opacity: 0;
     transform: translateX(-50px);
     animation: slideInRight 0.5s ease-in-out forwards;
@@ -50,9 +50,9 @@ nav {
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Ensure it's above other content */
-    background-color: rgba(0, 0, 0, 0.8); /* Adjust background color and opacity */
-    transition: top 0.3s ease; /* Smooth transition */
+    z-index: 1000; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    transition: top 0.3s ease;
 
     & a {
         background-color: #fcb900;
@@ -146,7 +146,6 @@ body {
 
 .visit-button:hover {
     background-color: rgba(255, 165, 0, 0.8);
-    /* Change color on hover */
 }
 
 
@@ -155,22 +154,22 @@ body {
     margin-left: 150px;
     margin-right: 150px;
     background-color: rgba(252, 185, 0, 0.8);
-    text-align: center; /* Center-align the content */
-    border-radius: 20px; /* Rounded corners */
-    padding: 20px; /* Add padding for better spacing */
+    text-align: center; 
+    border-radius: 20px; 
+    padding: 20px; 
     opacity: 0;
     transform: translateY(-50px);
     animation: slideInRight 0.5s ease-in-out forwards;
 
     & h2 {
-        margin-bottom: 20px; /* Add space below the h2 element */
+        margin-bottom: 20px;
     }
 
     & p {
-        display: inline-block; /* Display paragraphs as inline blocks */
-        width: 30%; /* Set width to 30% for each paragraph to create columns */
-        vertical-align: top; /* Align paragraphs to the top */
-        margin: 0 1%; /* Add margin between paragraphs */
+        display: inline-block;
+        width: 30%;
+        vertical-align: top; 
+        margin: 0 1%; 
     }
 
     @media screen and (max-width: 900px) {
@@ -183,24 +182,24 @@ body {
     text-align: center;
     margin-left: 150px;
     margin-right: 150px;
-    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
-    border-radius: 20px; /* Rounded corners */
-    padding: 20px; /* Add padding for better spacing */
-    margin-top: 10px; /* Adjust margin top */
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 20px; 
+    padding: 20px; 
+    margin-top: 10px; 
     opacity: 0;
     transform: translateX(-50px);
     animation: slideInRight 0.5s ease-in-out forwards;
 
     & h2 {
         margin-top: 20px;
-        margin-bottom: 20px; /* Add space below the h2 element */
+        margin-bottom: 20px; 
     }
 
     & div {
-        display: inline-block; /* Display the event details as inline block */
-        text-align: left; /* Left-align the event details */
-        width: 60%; /* Set width to 60% for the event details */
-        margin: 0 auto; /* Center the event details */
+        display: inline-block;
+        text-align: left; 
+        width: 60%; 
+        margin: 0 auto; 
     }
     @media screen and (max-width : 900px) {
         margin-left: 50px;
@@ -214,10 +213,10 @@ body {
     margin-right: 150px;
     display: flex;
     justify-content: space-around;
-    background-color: rgba(44, 44, 44, 0.8); /* Set background color */
-    border-radius: 20px; /* Rounded corners */
-    padding: 20px; /* Add padding for better spacing */
-    margin-top: 10px; /* Adjust margin top */
+    background-color: rgba(44, 44, 44, 0.8); 
+    border-radius: 20px; 
+    padding: 20px;
+    margin-top: 10px; 
 
     @media screen and (max-width: 900px) {
         flex-direction: column;
@@ -238,9 +237,9 @@ body {
     animation: slideInRight 0.5s ease-in-out forwards;
 
     & h3 {
-        color: #ffffff; /* Set text color */
-        font-size: 16px; /* Adjust font size */
-        margin-bottom: 15px; /* Add space below heading */
+        color: #ffffff; 
+        font-size: 16px; 
+        margin-bottom: 15px; 
     }
 
     & ul {
@@ -248,19 +247,19 @@ body {
     }
 
     & ul li {
-        color: #bbbbbb; /* Set text color */
-        font-size: 14px; /* Adjust font size */
-        margin-bottom: 8px; /* Add space between list items */
-        list-style: none; /* Remove bullet points */
+        color: #bbbbbb; 
+        font-size: 14px; 
+        margin-bottom: 8px; 
+        list-style: none; 
     }
 
     & ul li a {
-        color: #bbbbbb; /* Set link color */
-        text-decoration: none; /* Remove underline */
+        color: #bbbbbb; 
+        text-decoration: none; 
     }
 
     & ul li a:hover {
-        text-decoration: underline; /* Add underline on hover */
+        text-decoration: underline;
     }
 
     @media screen and (max-width: 900px) {
@@ -270,7 +269,6 @@ body {
     
 }
 
-/* Define keyframes for the animation */
 @keyframes slideInRight {
     from {
         opacity: 0;

@@ -32,8 +32,8 @@ header {
     text-align: center;
     transform: translateX(-50px);
     animation: slideInRight 0.5s ease-in-out forwards;
-    border-radius: 20px; /* Rounded corners */
-    padding: 20px; /* Add padding for better spacing */
+    border-radius: 20px; 
+    padding: 20px; 
 
     
     @media screen and (max-width: 900px) {
@@ -47,9 +47,9 @@ nav {
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Ensure it's above other content */
-    background-color: rgba(0, 0, 0, 0.8); /* Adjust background color and opacity */
-    transition: top 0.3s ease; /* Smooth transition */
+    z-index: 1000; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    transition: top 0.3s ease; 
 
     & a {
         background-color: #fcb900;
@@ -118,10 +118,10 @@ nav {
     margin-right: 150px;
     display: flex;
     justify-content: space-around;
-    background-color: rgba(44, 44, 44, 0.8); /* Set background color */
+    background-color: rgba(44, 44, 44, 0.8); 
     margin-top: 10px;
-    border-radius: 20px; /* Rounded corners */
-    padding: 20px; /* Add padding for better spacing */
+    border-radius: 20px; 
+    padding: 20px; 
     opacity: 0;
     transform: translateX(-50px);
     animation: slideInRight 0.5s ease-in-out forwards;
@@ -142,9 +142,9 @@ nav {
     animation: slideInRight 0.5s ease-in-out forwards;
 
     & h3 {
-        color: #ffffff; /* Set text color */
-        font-size: 16px; /* Adjust font size */
-        margin-bottom: 15px; /* Add space below heading */
+        color: #ffffff; 
+        font-size: 16px;
+        margin-bottom: 15px; 
     }
 
     & ul {
@@ -152,19 +152,19 @@ nav {
     }
 
     & ul li {
-        color: #bbbbbb; /* Set text color */
-        font-size: 14px; /* Adjust font size */
-        margin-bottom: 8px; /* Add space between list items */
-        list-style: none; /* Remove bullet points */
+        color: #bbbbbb;
+        font-size: 14px; 
+        margin-bottom: 8px; 
+        list-style: none; 
     }
 
     & ul li a {
-        color: #bbbbbb; /* Set link color */
-        text-decoration: none; /* Remove underline */
+        color: #bbbbbb; 
+        text-decoration: none;
     }
 
     & ul li a:hover {
-        text-decoration: underline; /* Add underline on hover */
+        text-decoration: underline; 
     }
 
     @media screen and (max-width: 900px) {
@@ -174,7 +174,6 @@ nav {
     
 }
 
-/* Define keyframes for the animation */
 @keyframes slideInRight {
     from {
         opacity: 0;
