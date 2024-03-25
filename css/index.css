@@ -52,7 +52,7 @@ nav {
     width: 100%;
     z-index: 1000; 
     background-color: rgba(0, 0, 0, 0.8); 
-    transition: top 0.3s ease;
+    transition: top 0.3s ease; 
 
     & a {
         background-color: #fcb900;
@@ -62,10 +62,6 @@ nav {
         text-decoration: none;
         padding: 10px;
         text-align: center;
-    }
-
-    & li {
-        list-style: none;
     }
 
     & a:hover {
@@ -79,40 +75,65 @@ nav {
 
     & li {
         flex: 1;
+        list-style: none;
+        position: relative; 
+    }
+}
+
+nav .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fcb900; 
+    width: 100%; 
+    z-index: 1000; 
+
+    & li {
+        padding: 10px;
     }
 
-    .hamburger,
+    & li:hover {
+        background-color: black; 
+    }
+}
+
+nav li:hover .dropdown {
+    display: block;
+}
+
+
+.hamburger,
+#hamburgerCheck {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
     #hamburgerCheck {
         display: none;
     }
 
-    @media screen and (width < 900px) {
-        #hamburgerCheck {
-            display: none;
-        }
+    .hamburger {
+        display: block;
+        font-size: 2rem;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fcb900;
+    }
 
-        .hamburger {
-            display: block;
-            font-size: 2rem;
-            padding: 20px;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: #fcb900;
-        }
+    nav ul {
+        flex-direction: column;
+        position: fixed;
+        top: 82.7px;
+        left: -100%;
+        width: 100%;
+        transition: left 500ms ease-in-out;
+    }
 
-        & ul {
-            flex-direction: column;
-            position: fixed;
-            top: 82.7px;
-            left: -100%;
-            width: 100%;
-            transition: left 500ms ease-in-out;
-        }
-
-        #hamburgerCheck:checked~ul {
-            left: 0;
-        }
+    #hamburgerCheck:checked ~ ul {
+        left: 0;
     }
 }
 
