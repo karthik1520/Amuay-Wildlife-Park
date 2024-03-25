@@ -1,91 +1,85 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-image: url(../images/contact.webp);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(../images/contact.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
-
-
 .contact-container {
-    display: flex;
-  }
-  
-  .contact {
-    text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
-    background-color: rgba(255, 255, 255, 0.8); 
-    border-radius: 20px; 
-    padding: 20px; 
-    margin-top: 70px;
-    transform: translateX(-50px);
-    animation: slideInRight 0.5s ease-in-out forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    &  h2 {
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px; 
-        font-size: 24px;
-        color: black;
-    }
+.contact {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 70px;
+  margin-left: 150px;
+  margin-right: 150px;
 
-    & p {
-        margin: 0 1%; 
-        font-size: 16px; 
-    }
-  }
-  
-  .contact-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  & h2 {
+    margin-top: 20px;
     margin-bottom: 20px;
+    font-size: 24px;
+    color: black;
+  }
 
+  & p {
+    margin: 0 1%;
+    font-size: 16px;
+  }
 
-    & p {
-        
-        margin: 5px 0; /* Reduced margin for tighter spacing */
-      }
+}
 
-    & p span {
-        color: green;
-        font-weight: bold;
-        margin-right: 5px; /* Reduced margin-right for better alignment */
-      }
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 20px;
 
-  } 
+  & p {
+    margin: 5px 0;
+  }
 
-  .contact-form {
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 20px;
+  & p span {
+    color: green;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+} 
+
+.contact-form {
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 .form-row {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .form-group {
-    flex: 1;
-    margin-right: 10px;
-}
-
-.form-group:last-child {
-    margin-right: 0;
+  flex: 1 1 45%;
+  margin-bottom: 15px;
+  margin-right: 10px;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 input[type="text"],
@@ -93,34 +87,37 @@ input[type="email"],
 input[type="tel"],
 textarea,
 select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    display: block;
-    margin: 0 auto;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 0 auto;
 }
 
-  
-  @keyframes slideInRight {
-    from {
-      opacity: 0;
-      transform: translateX(-50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+@media screen and (max-width: 900px) {
+  .contact {
+      margin-left: 10px;
+      margin-right: 10px;
   }
+
+  .contact-form {
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .form-group {
+      flex: 1 1 100%;
+  }
+}
