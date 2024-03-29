@@ -61,3 +61,37 @@ body {
     }
 }
 
+.faq {
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 10px;
+    transform: translateX(-50px);
+    animation: slideInRight 0.5s ease-in-out forwards;
+
+    & h2 {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: black;
+    }
+}
+
+
+.faq-item {
+    margin-bottom: 30px;
+& h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+&.faq-item p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+}
+

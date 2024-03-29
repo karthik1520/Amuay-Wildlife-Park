@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(../images/map_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.map {
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: rgba(252, 185, 0, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 70px;
+    transform: translateX(-50px);
+    animation: slideInRight 0.5s ease-in-out forwards;
+}
+
+.map h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: black;
+}
+
+.map p {
+    margin: 0 1%;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.map img[alt="Map"] {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media screen and (max-width: 900px) {
+    .map {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 10px;
+    }
+}
+
