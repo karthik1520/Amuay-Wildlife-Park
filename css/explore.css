@@ -1,9 +1,8 @@
 .container {
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
-
 
 body {
     margin: 0;
@@ -19,33 +18,33 @@ body {
     text-align: center;
     margin-left: 150px;
     margin-right: 150px;
-    background-color: rgba(255, 255, 255, 0.8); 
-    border-radius: 20px; 
-    padding: 20px; 
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 20px;
     margin-top: 70px;
     opacity: 0;
     transform: translateX(-50px);
     animation: slideInRight 0.5s ease-in-out forwards;
 
-    &  h2 {
+    & h2 {
         text-align: center;
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
         font-size: 24px;
         color: black;
     }
 
     & p {
-        margin: 0 1%; 
-        font-size: 16px; 
+        margin: 0 1%;
+        font-size: 16px;
     }
 }
 
 .buttons {
-    text-align: center; 
+    text-align: center;
     margin-top: 20px;
 
     & a {
-        margin: 0 10px; 
+        margin: 0 10px;
         display: inline-block;
         background-color: rgb(252, 185, 0);
         color: white;
@@ -56,7 +55,7 @@ body {
         cursor: pointer;
         border-radius: 5px;
         text-align: center;
-        white-space: nowrap; 
+        white-space: nowrap;
     }
 
     & a:hover {
@@ -65,14 +64,15 @@ body {
 }
 
 
-.pricing-individual, .pricing-family {
-    
+.pricing-individual,
+.pricing-family {
+
     margin-left: 150px;
     margin-right: 150px;
-    background-color: rgba(255, 255, 255, 0.8); 
-    border-radius: 20px; 
-    padding: 20px; 
-    margin-top: 10px; 
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 10px;
     opacity: 0;
     transform: translateX(-50px);
     animation: slideInRight 0.5s ease-in-out forwards;
@@ -86,7 +86,8 @@ body {
         border-collapse: collapse;
     }
 
-    & th, td {
+    & th,
+    td {
         padding: 10px;
         text-align: center;
         border: 1px solid #ddd;
@@ -100,60 +101,79 @@ body {
         background-color: #f9f9f9;
     }
 }
-
-
-@media screen and (max-width: 900px) {
-    .explore,
-    .buttons,
-    .pricing-individual,
-    .pricing-family,
-    .latest-news {
-        width: 100%;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-    .leftcolumn {
-        width: 100%;
-        padding-right: 0;
-    }
-    .rightcolumn {
-        width: 100%;
-        margin-top: 20px;
-    }
-}
-
-
 main {
-    display: flex; 
+    display: flex;
     flex: 1;
 }
 
 .leftcolumn {
-    width: 75%;
-    padding-right: 20px; 
+    width: 70%;
+    padding-right: 20px;
 }
 
 
 .rightcolumn {
-    width: 25%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     margin-top: 70px;
-    margin-left: -150px;
+    margin-left: -150px; 
 }
 
 
 .latest-news {
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
     padding: 20px;
     animation: slideInRight 0.5s ease-in-out forwards;
     margin-bottom: 10px;
 }
 
-footer {
-    margin-top: auto; 
+
+@media screen and (max-width: 900px) {
+
+    main{
+        flex-direction: column;
+    }
+
+    .explore,
+    .latest-news,
+    .buttons,
+    .pricing-individual,
+    .pricing-family{
+        margin-left: 30px;
+        margin-right: 0;
+    }
+
+    .leftcolumn,
+    .rightcolumn {
+        width: calc(100% - 40px); 
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px; 
+        margin-top: 90px; 
+    }
+
+    .rightcolumn {
+        margin-top: 10px;
+        order: 3;
+    }
+
+    .pricing-individual,
+    .pricing-family {
+        order: 2;
+    }
+
+    .explore {
+        order: 1;
+    }
+
+    footer {
+        order: 4;
+    }
 }
 
 
-
+footer {
+    margin-top: auto;
+}
